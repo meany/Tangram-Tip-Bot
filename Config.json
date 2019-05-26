@@ -1,0 +1,23 @@
+{
+  // DISCORD
+  "BotName": "<NICK>",
+  "BotPrefix": ".",
+  "BotToken": "<TOKEN>",
+  "ChannelIds": [],
+  "EmoteGood": "tick",
+  "EmoteBad": "❌",
+  "EmoteWait": "spinners:581874365608755207",
+  "RequestCooldown": 30,
+
+  // DATABASE
+  "ConnectionStrings": {
+    "Database": "<DATABASE>"
+  },
+
+  // NODES
+  "Node": {
+    "Url": "https://<NODE URL>",
+    "VaultShard": "<KEY>"
+  },
+  "WithdrawCooldown": 180
+}

@@ -1,0 +1,11 @@
+﻿{
+  "Configurations": {
+    "Debug": {
+      "BumpRevision": true
+    },
+    "Final": {
+      "BumpMinor": true,
+      "ResetPatch": true
+    }
+  }
+}

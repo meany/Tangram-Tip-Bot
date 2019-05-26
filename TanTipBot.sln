@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TanTipBot", "TanTipBot.csproj", "{DF7C0C2F-FA7F-4A1E-9C05-2A99EA5FA18A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{38864B16-3836-4B10-9A06-7AD108431303} = {38864B16-3836-4B10-9A06-7AD108431303}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TanDotNet", "..\TanDotNet\TanDotNet.csproj", "{38864B16-3836-4B10-9A06-7AD108431303}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF7C0C2F-FA7F-4A1E-9C05-2A99EA5FA18A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF7C0C2F-FA7F-4A1E-9C05-2A99EA5FA18A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF7C0C2F-FA7F-4A1E-9C05-2A99EA5FA18A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF7C0C2F-FA7F-4A1E-9C05-2A99EA5FA18A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38864B16-3836-4B10-9A06-7AD108431303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38864B16-3836-4B10-9A06-7AD108431303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38864B16-3836-4B10-9A06-7AD108431303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38864B16-3836-4B10-9A06-7AD108431303}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67C39C4E-6A34-4533-8C7B-37147A2AA5CE}
+	EndGlobalSection
+EndGlobal
