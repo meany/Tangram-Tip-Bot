@@ -4,9 +4,9 @@
   "BotPrefix": ".",
   "BotToken": "<TOKEN>",
   "ChannelIds": [],
-  "EmoteGood": "tick",
+  "EmoteGood": "✅",
   "EmoteBad": "❌",
-  "EmoteWait": "spinners:581874365608755207",
+  "EmoteWait": "spinners",
   "RequestCooldown": 30,
 
   // DATABASE

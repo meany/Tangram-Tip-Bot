@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace dm.TanTipBot
 {
-    public class Emote
+    public class Emotes
     {
         private readonly ICommandContext context;
 
-        public Emote(ICommandContext context)
+        public Emotes(ICommandContext context)
         {
             this.context = context;
         }

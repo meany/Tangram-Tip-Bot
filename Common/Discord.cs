@@ -12,7 +12,7 @@ namespace dm.TanTipBot
         {
             var msg = await SendDMAsync(ctx.User, embed, file, fileName, message);
 
-            if (deleteUserMessage && ctx.Guild != null)
+            if (deleteUserMessage && ctx.Guild != null && ctx.Message != null)
             {
                 await ctx.Message.DeleteAsync().ConfigureAwait(false);
             }

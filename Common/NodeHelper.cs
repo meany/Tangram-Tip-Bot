@@ -9,7 +9,7 @@ namespace dm.TanTipBot.Common
     {
         public static async Task<WalletAccount> CreateWallet(ITangramClient client)
         {
-            var item = await client.CreateWallet().ConfigureAwait(false);
+            var item = await client.WalletCreate().ConfigureAwait(false);
 
             return item;
         }
@@ -25,14 +25,14 @@ namespace dm.TanTipBot.Common
             return item.Balance;
         }
 
-        public static async Task<int> Receive(ITangramClient client, Wallet wallet)
+        public static async Task<int> Receive(ITangramClient client, Wallet wallet, RedemptionMessage message = null)
         {
             var item = await client.WalletReceive(new WalletAccount
             {
                 Identifier = wallet.Identifier,
                 Password = wallet.Password,
                 Address = wallet.Address
-            }).ConfigureAwait(false);
+            }, message).ConfigureAwait(false);
 
             return item.Balance;
         }
@@ -43,9 +43,20 @@ namespace dm.TanTipBot.Common
             {
                 Identifier = wallet.Identifier,
                 Password = wallet.Password
-            }, amount, destination, memo).ConfigureAwait(false);
+            }, amount, destination, false, memo).ConfigureAwait(false);
 
             return item.Balance;
+        }
+
+        public static async Task<RedemptionMessage> Send(ITangramClient client, Wallet wallet, int amount, string destination, string memo = null, bool createRedemptionKey = true)
+        {
+            var item = await client.WalletSend(new WalletAccount
+            {
+                Identifier = wallet.Identifier,
+                Password = wallet.Password
+            }, amount, destination, createRedemptionKey, memo).ConfigureAwait(false);
+
+            return item.Message;
         }
     }
 }
