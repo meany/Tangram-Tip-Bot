@@ -3,9 +3,9 @@
     "Debug": {
       "BumpRevision": true
     },
-    "Final": {
-      "BumpMinor": true,
-      "ResetPatch": true
+    "Release": {
+      "BumpRevision": true,
+      "BumpPatch": true
     }
   }
 }
