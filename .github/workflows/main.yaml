@@ -9,4 +9,6 @@ jobs:
       - uses: actions/setup-dotnet@v1
         with:
           dotnet-version: '2.2.203'
-      - run: dotnet build TanTipBot.csproj --configuration Release
+      - run: |
+        dotnet build TanTipBot.csproj --configuration Release
+        dotnet nuget push TanTipBot.0.1.0.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
