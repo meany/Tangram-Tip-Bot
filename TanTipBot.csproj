@@ -5,7 +5,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <RootNamespace>dm.TanTipBot</RootNamespace>
-    <Version>0.1.0.75</Version>
+    <Version>0.1.0.76</Version>
     <PackageId>TanTipBot</PackageId>
     <Authors>meany</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -24,6 +24,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>Config.json</DependentUpon>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include=".github\workflows\main.yaml" />
   </ItemGroup>
 
   <ItemGroup>
