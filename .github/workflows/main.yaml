@@ -9,6 +9,7 @@ jobs:
       - uses: actions/setup-dotnet@v1
         with:
           dotnet-version: '2.2.203'
-      - run: |
-        dotnet build TanTipBot.csproj --configuration Release
-        dotnet nuget push *.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
+      - name: build and push
+        run: |
+          dotnet build TanTipBot.csproj --configuration Release
+          dotnet nuget push *.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
